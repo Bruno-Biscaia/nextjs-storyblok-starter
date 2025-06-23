@@ -1,7 +1,25 @@
-import type { NextConfig } from "next";
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: [
+      // outros domínios que você já usa,
+      'a.storyblok.com'
+    ],
+  },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'a.storyblok.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+}

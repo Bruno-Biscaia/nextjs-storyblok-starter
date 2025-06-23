@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@storyblok/react": "^5.0.0",
+    "axios": "^1.10.0",
     "next": "15.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "storyblok-js-client": "^7.0.1",
+    "storyblok-react": "^0.1.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
